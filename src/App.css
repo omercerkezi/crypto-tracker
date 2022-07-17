@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a1c;
+  color: #fff;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.coin-tags {
+  width: 90%;
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.tag-rank {
+  margin-left: 1%;
+  width: 5%;;
+}
+
+.tag-coin {
+  width: 30%;
+}
+
+.tag-price {
+  width: 10%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.tag-volume {
+  padding-left: 5%;
+  width: 25%;
+}
+
+.tag-percent {
+  width: 10%;
+}
+
+.tag-mktcap {
+  width: 20%;
+  padding-right: 3%;
+  text-align: right;
+}
+
+@media screen and (max-width: 860px) {
+  .tag-volume {
+    display: none;
+  }
+
+  .tag-price {
+    margin-left: 5%;
+  }
+
+  .tag-percent {
+    width: 20%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tag-coin {
+    width: 50%;
+  }
+
+  .tag-price {
+    width: 20%;
+  }
+
+  .tag-percent {
+    width: 20px;
+  }
+  
+  .tag-volume {
+    display: none;
+  }
+
+  .tag-mktcap {
+    display: none;
+  }
+}
